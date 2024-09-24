@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        table, th, td {
+  border: 1px solid black;
+}
+</style>
+</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <table>
+        <caption>fruits</caption>
+        <tr>
+          <th>oranges</th>
+          <th>apples</th>
+          <th>bananas</th>
+          </table>
