@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="style" href="styles.css">
+    <style>
+        body {font-family:Arial, Helvetica, sans-serif;}
+        h1, h2{color:crimson}
+        .evenrow {background-color: forestgreen;}
+        h1{font-family:2em;}
+        h2{font-family:1.5em;}
+        body{background-color: #540D6E;color:#EE4266}
+            a{color: #FFD23F;}
+            h1{color: #F3FCF0;}
+            nav{background-color: #92B4A7;
+                 border: 5px;
+                 padding: 10px;
+                 margin-bottom: 30px;}
+            nav a{color: #F6F930;}
+            nav a:hover{background-color: #19647E;}
+            
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>|<a href="skills.html">Skills</a>|<a href="contact.html">Contacts</a>
+    </nav>
+
+    <h1>Contact</h1>
+         <p>Michael Haass 613 Walnut Ave</p>
+    <h2>Linkedin</h2>
+         <a href="https://www.linkedin.com/in/michael-haass-276323233/"target="_blank">My Linkedin Profile</a>
+         <a href="https://www.linkedin.com/in/michael-haass-276323233/"target="_blank"><img src="link-small.png" alt="Linkedin logo"></a>
+    <h2>email</h2>
+         <a href="mailto:mghaass@syr.edu">Michael Haass Email</a>
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3742.366197799337!2d-76.13104748679609!3d43.043134968161276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f30a06fc0d73%3A0x3e9c78c234509deb!2s613%20Walnut%20Ave%2C%20Syracuse%2C%20NY%2013210!5e0!3m2!1sen!2sus!4v1726177954767!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <form action="https://formspree.io/f/xqazveyj" method="post">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname">
+        <input type="submit" value="Submit">
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+        <label for="Please click">more info here:</label>
+        <textarea id="help" name="help" rows="4" cols="50">      </textarea>
+    </form>
+</body>
+</html>
