@@ -1,0 +1,25 @@
+body {
+    background-image: url('cuselogo.png');
+    background-repeat: repeat; /* Repeats vertically and horizontally */
+    background-size: auto; /* Keeps the original size of the image */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .bleed-orange {
+    background-color: #FF7F50; /* Custom hex color for background */
+    color: white;
+    padding: 20px;
+    border: 3px solid #3498db; /* Non-black blue border */
+    border-radius: 8px;
+    font-size: 24px;
+  }
+  
