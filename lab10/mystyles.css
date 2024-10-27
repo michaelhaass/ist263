@@ -27,3 +27,26 @@ body{background-color: #540D6E;color:#EE4266}
          padding: 10px;
          margin-bottom: 30px;}            nav a{color: #F6F930;}
     nav a:hover{background-color: #19647E;}
+  .responsive-image {
+    max-width: 100%;
+    height: auto;
+  }
+  .form-map-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  nav a {
+    display: inline;
+  }
+  @media (max-width: 768px) {
+    nav a {
+      display: block;
+      width: 100%;
+    }
+    nav span {
+      display: none;
+    }
+    nav a {
+      margin: 10px 0;
+    }
+  }
