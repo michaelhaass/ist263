@@ -3,35 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Responsive Text with JavaScript</title>
+  <title>Responsive Text</title>
   <style>
-    /* Basic styling for the text */
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      margin-top: 20%;
-      font-size: 2rem;
+
+    .large-text, .small-text {
+      display: none;
+    }
+
+
+    @media (min-width: 801px) {
+      .large-text {
+        display: block;
+      }
+    }
+
+    @media (max-width: 800px) {
+      .small-text {
+        display: block;
+      }
     }
   </style>
 </head>
 <body>
-  <p id="responsiveText">I'm large.</p>
-
-  <script>
-    function updateText() {
-      const responsiveText = document.getElementById("responsiveText");
-      if (window.innerWidth > 800) {
-        responsiveText.textContent = "I'm large.";
-      } else {
-        responsiveText.textContent = "I'm small.";
-      }
-    }
-
-    // Run on initial load
-    updateText();
-
-    // Update text when window is resized
-    window.addEventListener("resize", updateText);
-  </script>
+  <p class="large-text">I'm large.</p>
+  <p class="small-text">I'm small.</p>
 </body>
 </html>
