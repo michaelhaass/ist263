@@ -5,19 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Responsive Text</title>
   <style>
-    .large-text {
-      display: none;
-    }
-    .small-text {
+    /* Hide both by default */
+    .large-text, .small-text {
       display: none;
     }
 
-    /* Display text based on viewport width */
+    /* Show "I'm large" when viewport is over 800 pixels */
     @media (min-width: 801px) {
       .large-text {
         display: block;
       }
     }
+
+    /* Show "I'm small" when viewport is 800 pixels or less */
     @media (max-width: 800px) {
       .small-text {
         display: block;
