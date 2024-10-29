@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Text</title>
+  <style>
+    .large-text {
+      display: none;
+    }
+    .small-text {
+      display: none;
+    }
+
+    /* Display text based on viewport width */
+    @media (min-width: 801px) {
+      .large-text {
+        display: block;
+      }
+    }
+    @media (max-width: 800px) {
+      .small-text {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <p class="large-text">I'm large.</p>
+  <p class="small-text">I'm small.</p>
+</body>
+</html>
