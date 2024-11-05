@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shell Game</title>
+    <script>
+function WinnerMessage() {
+    document.getElementById("message").innerHTML = "You Won!";
+}
+
+function TryAgain() {
+    document.getElementById("message").innerHTML = "Wrong Shell - Try Again";
+}
+
+</script>
+</head>
+<body>
+    <div id="message"></div>
+
+    <h1>Shell Game</h1>
+<img src="shell1.png" alt="Shell 1" id="first" onclick="WinnerMessage()">
+<img src="shell2.png" alt="Shell 2" id="second" onclick="TryAgain()">
+<img src="shell3.png" alt="Shell 3" id="third" onclick="TryAgain()">
+<div class="container">
+    <img src="shell1.png" alt="Shell 1" id="first" onclick="WinnerMessage()">
+    <img src="shell2.png" alt="Shell 2" id="second" onclick="TryAgain()">
+    <img src="shell3.png" alt="Shell 3" id="third" onclick="TryAgain()">
+</div>
+<style>
+    .container {
+        display: flex;
+        justify-content: center;
+    }
+    #first { order: 1; }
+    #second { order: 2; }
+    #third { order: 3; }
+</style>
+<script>
+function ShuffleShells() {
+    document.getElementById("first").style.order = Math.floor((Math.random() * 3) + 1);
+    document.getElementById("second").style.order = Math.floor((Math.random() * 3) + 1);
+    document.getElementById("third").style.order = Math.floor((Math.random() * 3) + 1);
+}
+</script>
+    <div id="message"></div>
+    <body onload="ShuffleShells()">
+
+</body>
+</html>
