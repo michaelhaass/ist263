@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dog Breeds - Breed Detail</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">Dog Breeds</h1>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Breeds</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="breed-container">
+    <section class="breed-image">
+      <img src="GermanShep.jpeg" alt="Germann Shepherd">
+    </section>
+    <section class="breed-info">
+      <h2>German Shepherd</h2>
+      <p>courageous, confident, smart.</p>
+      <ul>
+        <li><strong>Height:</strong> 22-26 inches</li>
+        <li><strong>Weight:</strong> 50-90 lbs</li>
+        <li><strong>Lifespan:</strong> 12-14 years</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Dog Breeds Information. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
