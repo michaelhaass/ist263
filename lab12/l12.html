@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Planet Slideshow</title>
+    <style>#slideshow {
+        display: flex;
+        align-items: center;
+    }
+    
+    #planetDisplay img {
+        width: 200px;
+        float: left;
+    }
+    
+    #planetInfo {
+        margin-left: 20px;
+        float: right;
+    }
+    
+    #thumbnails img {
+        width: 50px;
+        cursor: pointer;
+        margin: 5px;
+        float: left;
+    }
+    </style>
+</head>
+<body>
+    <div id="slideshow">
+        <!-- Large display area for selected planet -->
+        <div id="planetDisplay">
+            <img id="mercury" src="mercury.jpg" alt="Mercury" style="display: block;">
+            <img id="venus" src="venus.jpg" alt="Venus" style="display: none;">
+            <!-- Add images for other planets here -->
+        </div>
+        <div id="planetInfo">
+            <div id="mercuryInfo" style="display: block;">Mercury details...</div>
+            <div id="venusInfo" style="display: none;">Venus details...</div>
+            <!-- Add info for other planets here -->
+        </div>
+    </div>
+
+    <!-- Thumbnails -->
+    <div id="thumbnails">
+        <img src="thumb_mercury.jpg" alt="Mercury" onclick="PlanetsOff(); showMercury();">
+        <img src="thumb_venus.jpg" alt="Venus" onclick="PlanetsOff(); showVenus();">
+        <!-- Add thumbnails for other planets here -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

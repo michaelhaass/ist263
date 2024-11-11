@@ -1,0 +1,23 @@
+// Function to turn off all planet images and text
+function PlanetsOff() {
+    document.getElementById('mercury').style.display = 'none';
+    document.getElementById('venus').style.display = 'none';
+    // Add similar lines to hide other planets
+
+    document.getElementById('mercuryInfo').style.display = 'none';
+    document.getElementById('venusInfo').style.display = 'none';
+    // Add similar lines to hide other planet info
+}
+
+// Functions to show each planet's image and text
+function showMercury() {
+    document.getElementById('mercury').style.display = 'block';
+    document.getElementById('mercuryInfo').style.display = 'block';
+}
+
+function showVenus() {
+    document.getElementById('venus').style.display = 'block';
+    document.getElementById('venusInfo').style.display = 'block';
+}
+
+// Add similar functions for other planets
