@@ -4,8 +4,125 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dog Breeds - Breed Detail</title>
-  <link rel="stylesheet" href="styles.css">
 </head>
+<style>* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Color Scheme */
+  :root {
+    --primary-color: #4CAF50;
+    --secondary-color: #f5f5f5;
+    --text-color: #333;
+    --background-color: #fff;
+  }
+  
+  /* Body and Global Styles */
+  body {
+    font-family: Arial, sans-serif;
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* Navigation Styles */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 15px 20px;
+    width: 100%;
+    max-width: 1000px;
+  }
+  
+  .logo {
+    color: var(--background-color);
+    font-size: 1.5em;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-left: 20px;
+  }
+  
+  .nav-links a {
+    color: var(--background-color);
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .nav-links a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Main Content Layout */
+  .breed-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    max-width: 1000px;
+    margin-top: 20px;
+  }
+  
+  .breed-image img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  
+  .breed-info h2 {
+    font-size: 1.8em;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+  }
+  
+  .breed-info p {
+    font-size: 1em;
+    margin-bottom: 15px;
+  }
+  
+  /* Footer Styles */
+  footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.9em;
+    color: var(--text-color);
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    /* Stack main content for smaller screens */
+    .breed-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    /* Adjust navigation for mobile */
+    .nav-links {
+      display: none;
+    }
+  
+    .navbar {
+      justify-content: space-between;
+    }
+  
+    /* Add a hamburger menu (optional - to be implemented in JS for interactivity) */
+  }
+  
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .breed-container {
+      flex-direction: column;
+    }
+  }</style>
 <body>
 
   <header>
