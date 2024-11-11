@@ -4,123 +4,124 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dog Breeds - Breed Detail</title>
-</head>
-<style>* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Color Scheme */
-  :root {
-    --primary-color: #4CAF50;
-    --secondary-color: #f5f5f5;
-    --text-color: #333;
-    --background-color: #fff;
-  }
-  
-  /* Body and Global Styles */
-  body {
-    font-family: Arial, sans-serif;
-    color: var(--text-color);
-    background-color: var(--secondary-color);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-  }
-  
-  /* Navigation Styles */
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--primary-color);
-    padding: 15px 20px;
-    width: 100%;
-    max-width: 1000px;
-  }
-  
-  .logo {
-    color: var(--background-color);
-    font-size: 1.5em;
-  }
-  
-  .nav-links {
-    list-style: none;
-    display: flex;
-  }
-  
-  .nav-links li {
-    margin-left: 20px;
-  }
-  
-  .nav-links a {
-    color: var(--background-color);
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  .nav-links a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Main Content Layout */
-  .breed-container {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    max-width: 1000px;
-    margin-top: 20px;
-  }
-  
-  .breed-image img {
-    max-width: 300%;
-    border-radius: 100px;
-  }
-  
-  .breed-info h2 {
-    font-size: 1.8em;
-    color: var(--primary-color);
-    margin-bottom: 10px;
-  }
-  
-  .breed-info p {
-    font-size: 1em;
-    margin-bottom: 15px;
-  }
-  
-  footer {
-    margin-top: 20px;
-    text-align: center;
-    font-size: 0.9em;
-    color: var(--text-color);
-  }
-  
-  /* Responsive Styles */
-  @media (max-width: 768px) {
-    /* Stack main content for smaller screens */
-    .breed-container {
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    /* Color Scheme */
+    :root {
+      --primary-color: #4CAF50;
+      --secondary-color: #f5f5f5;
+      --text-color: #333;
+      --background-color: #fff;
+    }
+    
+    /* Body and Global Styles */
+    body {
+      font-family: Arial, sans-serif;
+      color: var(--text-color);
+      background-color: var(--secondary-color);
+      display: flex;
       flex-direction: column;
       align-items: center;
+      padding: 20px;
     }
-  
-    .nav-links {
-      display: none;
-    }
-  
+    
+    /* Navigation Styles */
     .navbar {
+      display: flex;
       justify-content: space-between;
+      align-items: center;
+      background-color: var(--primary-color);
+      padding: 15px 20px;
+      width: 100%;
+      max-width: 1000px;
     }
-  
-   
-  }
-  
-  @media (min-width: 769px) and (max-width: 1024px) {
+    
+    .logo {
+      color: var(--background-color);
+      font-size: 1.5em;
+    }
+    
+    .nav-links {
+      list-style: none;
+      display: flex;
+    }
+    
+    .nav-links li {
+      margin-left: 20px;
+    }
+    
+    .nav-links a {
+      color: var(--background-color);
+      text-decoration: none;
+      font-weight: bold;
+    }
+    
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+    
+    /* Main Content Layout */
     .breed-container {
-      flex-direction: column;
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      max-width: 1000px;
+      margin-top: 20px;
     }
-  }</style>
+    
+    .breed-image img {
+      width: 100%;
+      max-width: 500px; /* Increase the image size */
+      border-radius: 10px;
+    }
+    
+    .breed-info h2 {
+      font-size: 1.8em;
+      color: var(--primary-color);
+      margin-bottom: 10px;
+    }
+    
+    .breed-info p {
+      font-size: 1em;
+      margin-bottom: 15px;
+    }
+    
+    footer {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 0.9em;
+      color: var(--text-color);
+    }
+    
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      /* Stack main content for smaller screens */
+      .breed-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .nav-links {
+        display: none;
+      }
+    
+      .navbar {
+        justify-content: space-between;
+      }
+    }
+    
+    @media (min-width: 769px) and (max-width: 1024px) {
+      .breed-container {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
 <body>
 
   <header>
@@ -136,11 +137,11 @@
 
   <main class="breed-container">
     <section class="breed-image">
-      <img src="GermanShep.jpeg" alt="Germann Shepherd">
+      <img src="GermanShep.jpeg" alt="German Shepherd">
     </section>
     <section class="breed-info">
       <h2>German Shepherd</h2>
-      <p>courageous, confident, smart.</p>
+      <p>Courageous, confident, smart.</p>
       <ul>
         <li><strong>Height:</strong> 22-26 inches</li>
         <li><strong>Weight:</strong> 50-90 lbs</li>
