@@ -75,8 +75,8 @@
   }
   
   .breed-image img {
-    max-width: 100%;
-    border-radius: 10px;
+    max-width: 300%;
+    border-radius: 100px;
   }
   
   .breed-info h2 {
@@ -90,7 +90,6 @@
     margin-bottom: 15px;
   }
   
-  /* Footer Styles */
   footer {
     margin-top: 20px;
     text-align: center;
@@ -106,7 +105,6 @@
       align-items: center;
     }
   
-    /* Adjust navigation for mobile */
     .nav-links {
       display: none;
     }
@@ -115,7 +113,7 @@
       justify-content: space-between;
     }
   
-    /* Add a hamburger menu (optional - to be implemented in JS for interactivity) */
+   
   }
   
   @media (min-width: 769px) and (max-width: 1024px) {
