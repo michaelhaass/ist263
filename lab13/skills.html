@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills Page</title>
+</head>
+<a href="#main-content" class="skip-to-content">Skip to main content</a>
+<main id="main-content">
+    <h1>Page Title</h1>
+    <p>Welcome to the content of the page.</p>
+</main>
+
+<style>
+    body {
+    background-color: #ffffff; /* White */
+    color: #333333; /* Dark gray for good contrast */
+}
+
+    .skip-to-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    z-index: 1000;
+}
+.skip-to-content:focus {
+    top: 10px; /* Move into view when focused */
+}
+
+    body {
+    font-size: 1rem; /* Relative size */
+}
+h1 {
+    font-size: 2em; /* Resizable */
+}
+
+th, td{border: 1px solid black;}
+body {font-family:Arial, Helvetica, sans-serif;}
+h1, h2{color:crimson}
+.evenrow {background-color: forestgreen;}
+h1{font-family:2em;}
+h2{font-family:1.5em;}
+body{background-color: #540D6E;color:#EE4266}
+    a{color: #FFD23F;}
+    h1{color: #F3FCF0;}
+    nav{background-color: #92B4A7;
+         border: 5px;
+         padding: 10px;
+         margin-bottom: 30px;}            nav a{color: #F6F930;}
+    nav a:hover{background-color: #19647E;}
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#intro {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Flexbox 2 Container */
+.flexbox-2 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Flexbox 1 (Icons and Skills) */
+.skills-flexbox {
+    display: flex;
+    justify-content: space-around;
+    flex: 3;
+}
+
+.skill {
+    text-align: center;
+}
+
+.icon {
+    width: 80px;
+}
+
+/* Sidebar */
+.sidebar {
+    flex: 1;
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.sidebar h2 {
+    text-align: center;
+    color: #333;
+}
+.responsive-image {
+    max-width: 100%;
+    height: auto;
+  }
+  .form-map-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  nav a {
+    display: inline;
+  }
+  @media (max-width: 768px) {
+    nav a {
+      display: block;
+      width: 100%;
+    }
+    nav span {
+      display: none;
+    }
+    nav a {
+      margin: 10px 0;
+    }
+  }
+  </style>
+
+<body>
+
+    
+    <header>
+        <h1 id="main-heading">Technical Skills</h1>
+    </header>
+
+
+    <section id="intro">
+        <p>Welcome to my skills page. Below you will find a summary of my top technical skills, illustrated by relevant icons, as well as additional skills in the sidebar.</p>
+    </section>
+
+
+    <div class="flexbox-2">
+        
+        <div class="skills-flexbox">
+            <div class="skill">
+                <img src="speaking.jpeg" alt="speaking" class="icon">
+                <p>Skill 1</p>
+            </div>
+            <div class="skill">
+                <img src="listening.jpeg" alt="listening" class="icon">
+                <p>Skill 2</p>
+            </div>
+            <div class="skill">
+                <img src="math.webp" alt="math" class="icon">
+                <p>Skill 3</p>
+            </div>
+            <div class="skill">
+                <img src="reading.webp" alt="reading" class="icon">
+                <p>Skill 4</p>
+            </div>
+            <div class="skill">
+                <img src="teamwork.jpeg" alt="teamwork" class="icon">
+                <p>Skill 5</p>
+            </div>
+        </div>
+
+        <aside class="sidebar">
+            <h2>Other Skills</h2>
+            <ul>
+                <li>speaking</li>
+                <li>listening</li>
+                <li>math</li>
+                <li>reading</li>
+                <li>teamwork</li>
+            </ul>
+        </aside>
+    </div>
+
+</body>
+</html>
