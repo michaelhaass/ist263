@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dog Breeds Information</title>
+<style>body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+  }
+  
+  header {
+    background: #4CAF50;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    margin: 0 1rem;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  main {
+    padding: 1rem;
+  }
+  
+  section#featured {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .breed-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    max-width: 300px;
+  }
+  
+  .breed-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 1rem;
+  }
+
+  img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+  </section>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Dog Breeds Encyclopedia</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="breeds.html">Breeds</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="introduction">
+      <h2>Explore Dog Breeds</h2>
+      <p>Discover a variety of dog breeds, their characteristics, traits, and pictures to learn which breed suits your lifestyle best.</p>
+      <img src="pup.jpg" alt="A variety of dog breeds">
+    </section>
+    <section id="featured">
+      <h2>Featured Breeds</h2>
+      <div class="breed-card">
+        <img src="goldenretriever.avif" alt="Golden Retriever">
+        <h3>Golden Retriever</h3>
+        <p>Loyal and friendly, Golden Retrievers are perfect family pets.</p>
+        <a href="golden.html">Learn More</a>
+      </div>
+      <section id="featured">
+        <div class="breed-card">
+          <img src="GermanShep.jpeg" alt="German Shepherd">
+          <h3>German Shepherd</h3>
+          <p>Courageous & Smart. German Shepherds protect their family at all costs.</p>
+          <a href="german.html">Learn More</a>
+        </div>
+      <!-- Add more cards -->
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Dog Breeds Encyclopedia. All rights reserved.</p>
+  </footer>
+</body>
+</html>
