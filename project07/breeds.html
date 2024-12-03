@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dog Breeds</title>
+ <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    
+    header nav ul {
+      list-style: none;
+      padding: 0;
+    }
+    
+    header nav ul li {
+      display: inline;
+      margin: 0 10px;
+    }
+    
+    header nav ul li a {
+      color: white;
+      text-decoration: none;
+    }
+    
+    main {
+      padding: 2rem;
+    }
+    
+    #dog-breeds {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    
+    .breed-card {
+      width: 250px;
+      text-align: center;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .breed-img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+    
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+</style>    
+</head>
+<body>
+  <header>
+    <h1>Dog Breeds</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="breeds.html">Breeds</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <section id="dog-breeds">
+      <h2>Popular Dog Breeds</h2>
+
+      <div class="breed-card">
+        <img src="goldenretriever.avif" alt="Golden Retriever" class="breed-img">
+        <h3>Golden Retriever</h3>
+        <p>Friendly, intelligent, and devoted family dog.</p>
+      </div>
+
+      <div class="breed-card">
+        <img src="GermanShep.jpeg" alt="German Shepherd" class="breed-img">
+        <h3>German Shepherd</h3>
+        <p>Loyal, protective, and smart.</p>
+      </div>
+
+      <div class="breed-card">
+        <img src="bulldog.avif" alt="Bulldog" class="breed-img">
+        <h3>Bulldog</h3>
+        <p>Gentle and affectionate companion.</p>
+      </div>
+
+      <div class="breed-card">
+        <img src="beagle.webp" alt="Beagle" class="breed-img">
+        <h3>Beagle</h3>
+        <p>Friendly, curious, and merry dog breed.</p>
+      </div>
+
+      <div class="breed-card">
+        <img src="bernese.jpeg" alt="Bernese Mountain Dog" class="breed-img">
+        <h3>Bernese Mountain Dog</h3>
+        <p>Affectionate, calm, and strong.</p>
+      </div>
+
+      <div class="breed-card">
+        <img src="dalmation.jpeg" alt="Dalmation" class="breed-img">
+        <h3>Dalmation</h3>
+        <p>Outgoing, sensitive, and playful.</p>
+      </div>
+
+      <div class="breed-card">
+        <img src="st.bernard.webp" alt="St. Bernard" class="breed-img">
+        <h3>St. Bernard</h3>
+        <p>Lively, energetic, and watchful.</p>
+      </div>
+
+      <div class="breed-card">
+        <img src="husky.webp" alt="Siberian Husky" class="breed-img">
+        <h3>Siberian Husky</h3>
+        <p>Alert, bold, and gentle.</p>
+      </div>
+
+      <div class="breed-card">
+        <img src="border.jpg" alt="Border Collie" class="breed-img">
+        <h3>Border Collie</h3>
+        <p>Responsive, athletic, and attentive.</p>
+      </div>
+
+      <div class="breed-card">
+        <img src="sheltie.jpeg" alt="Shetland Sheepog" class="breed-img">
+        <h3>Shetland Sheepdog</h3>
+        <p>Dramatic, active, and eager.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Dog Breeds Encyclopedia. All rights reserved.</p>
+  </footer>
+</body>
+</html>
